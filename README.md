@@ -20,6 +20,7 @@ El diseño FrontEnd se desarrolla a modo **"one page"** adaptable a todas las pa
 <br>
 
 
+
 ## Tecnologías implementadas
 
 
