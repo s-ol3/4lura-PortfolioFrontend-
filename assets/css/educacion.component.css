@@ -1,0 +1,75 @@
+.moduloEducacion {
+  border-bottom: 1px solid var(--color-modulo-subseccion);
+  padding: 3em .5em 2em 0;
+}
+
+.logoseducacion {
+  width: 8em;
+  transition: all 0.19s ease-out;
+  padding: 1em 0;
+}
+
+.logoseducacion:hover {
+  transform: scale(1.2);
+}
+
+.seccionEducacion {
+  background-color: var(--color-background-claro);
+  z-index: 1;
+  padding: 5em 3em 5em var(--padding-left);
+  color: var(--color-links-navbar);
+  border-left: 2px solid white !important;
+  /* por bordes blanco negro en la superposicion */
+}
+
+.educacionBanner {
+  background-color: var(--color-background-oscuro1);
+  z-index: 1;
+  background-image: url(https://images.pexels.com/photos/16650113/pexels-photo-16650113.jpeg);
+  opacity: 99%;
+  min-height: 65em;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+
+
+@media only screen and (max-device-width: 1000px) {
+  .educacionBanner {
+    background-position: left;
+    background-size: 141%;
+  }
+}
+
+@media only screen and (max-device-width: 820px) {
+  .educacionBanner {
+    background-position: left;
+    background-size: 140%;
+    min-height: 35em;
+  }
+}
+
+@media only screen and (max-device-width: 575px) {
+  .educacionBanner {
+    background-position: left;
+    background-size: 220%;
+    /* min-height: 20em; */
+  }
+
+
+  .seccionEducacion {
+    padding: 5em 3em 5em 4.5em;
+  }
+}
+
+
+
+
+p {
+  color: var(--color-texto-medio-educacion);
+  /* color: var(--color-texto-medio); */
+  letter-spacing: 2px;
+}

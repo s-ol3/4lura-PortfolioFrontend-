@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- metadatos -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="sf">
+  <meta name="description" content="Portfolio frontend">
+  <!-- titulo -->
+  <title> sf | portfolio web </title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/faviconRotado6.svg">
+  <!-- iconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- iconos de fontawesome -->
+  <script src="https://kit.fontawesome.com/068ea2d762.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Nova+Round&family=Rajdhani:wght@500&family=Roboto+Mono:wght@300&family=Space+Mono&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- navbar ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' 
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <nav class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <!-- <a href=""><img src="./assets/img/logo-sinFondoNEGR.png" alt="logo"></a> -->
+      </div>
+    </div>
+    <!-- menu hamburguesa -->
+    <div class="nav-btn">
+      <label for="nav-check">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+    <ul class="nav-list pe-3">
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#sobre-mi">Sobre mi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#educacion">Educación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#proyectos">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#contacto">Contacto</a>
+      </li>
+      <li><a routerLink="/login">
+          <i class="bi bi-box-arrow-in-right nav-itemLog  mt-1 " type="button"></i>
+        </a></li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- header '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+  <section class="container-fluid headername" id="home">
+    <div class=" m-5">
+      <div class="d-flex flex-column presentacion">
+        <div class="">
+          <!-- titulo seccion --------------------------------->
+          <div>
+            <h1><span class="name">Soledad</span>Fretes</h1>
+            <h5>ARQUITECTA | PROGRAMADORA WEB FULLSTACK JR</h5>
+          </div>
+          <!-- componente redes-------------------------------->
+          <div class=" d-flex flex-row redes1">
+            <a class="pe-4 pt-3" href="https://www.linkedin.com/" target="_blank">
+              <i class="bi bi-linkedin"></i></a>
+            <a class="pe-4 pt-3" href="https://github.com/" target="_blank">
+              <i class="bi bi-github"></i></a>
+            <a class="pe-4 pt-3" href="mailto:sol@gmail.com/" target="_blank">
+              <i class="bi bi-envelope-fill"></i></a>
+            <a class="pe-4 pt-3" href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-instagram"></i></a>
+            <a class="pe-4 pt-3" href="https://dribbble.com/" target="_blank">
+              <i class="bi bi-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- banner entrada ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <div class="container-fluid">
+    <!--  title="By Mo Eid" -->
+    <div class="banner1">
+      <!-- <div class="text-end ">
+      </div> -->
+    </div>
+  </div>
+
+
+
+  <!-- sobre mi + experiencias + banner avatar '''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <section>
+    <div class="container-fluid seccion-oscura" id="sobre-mi">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="m-0 col-sm-8 sobremi">
+            <div class="text-end">
+            </div>
+
+            <!-- titulo sobre mi -->
+            <h2 class="seccion-titulo">Sobre mi</h2>
+            <p class="seccion-texto">
+              Soy arquitecta de profesión, con interés en las áreas de diseño gráfico,
+              fotografía, ilustración, diseño ux/ui y programación web. En mis diseños busco resoluciones claras,
+              concisas, atractivas e individuales, optimizadas de manera que resulten en la facilidad de uso y resuelvan
+              las necesitades del usuario. Me considero una persona proactiva, organizada, responsable y curiosa,
+              apasionada por aprender cosas nuevas cada día.
+            </p>
+            <!-- titulo experiencias -->
+            <h2 class="seccion-titulo mt-5 pt-5">Experiencia</h2>
+            <p class="seccion-texto">
+              Trabajo como arquitecta de manera particular realizando proyectos variados en el rubro de la arquitectura
+              y el diseño, anteproyectos y proyectos de obra, cómputos y presupuestos, legajos técnicos y seguimiento de
+              obra, planos técnicos y de detalles, modelado 3D skp, presentaciones, renders. (*mas a cargar) Aquí lo más
+              relevante:
+            </p>
+
+            <div class=" pt-0 pb-4">
+              <br>
+              <!-------------------- modulo experiencia -->
+              <div class="moduloExp">
+                <!-- <div class="mb-3 logosExp">
+                  <img src="" class="logosExp">
+                </div> -->
+                <div>
+                  <h6>2017-2023. <strong>FREELANCE</strong></h6>
+                </div>
+                <div>
+                  <h6>Puesto/Tarea: <strong>ARQUITECTA, DISEÑADORA, DIBUJANTE CAD, MODELADORA 3D SKP</strong></h6>
+                </div>
+                <p class="pExp"></p>
+              </div>
+              <!-------------------- modulo experiencia -->
+              <div class="moduloExp">
+                <div>
+                  <h6>2016-2017. <strong>Particular</strong></h6>
+                </div>
+                <div>
+                  <h6>Puesto/Tarea: <strong>DISEÑADORA DE ANTEPROYECTOS. CASA KO, TEXAS, EEUU</strong></h6>
+                </div>
+                <p class="pExp">Diseño de 4 propuestas para obra nueva sobre terreno existente, construidas en steel
+                  framing sobre platea. </p>
+              </div>
+              <!-------------------- modulo experiencia -->
+              <div class="moduloExp">
+                <div>
+                  <h6>2020-2022. <strong>Particular</strong></h6>
+                </div>
+                <div>
+                  <h6>Puesto/Tarea: <strong>DISEÑADORA DE REFORMAS, ANTEPROYECTOS Y LEGAJO TÉCNICO. CASA T, MISIONES,
+                      ARGENTINA</strong></h6>
+                </div>
+                <p class="pExp">Diseño de 3 propuestas de obra nueva (1, 2 y 3 plantas) y 3 reformas sobre obra
+                  existente. </p>
+              </div>
+            </div>
+
+            <!-- descarga cv ---------------------------------------------------->
+            <br><a target="_blank" class="linkcv" href="https://drive.google.com/file/d/1u">Ver Curriculum Vitae</a><br>
+          </div>
+          <!-- banner avatar -->
+          <div class="m-0 col-sm-4 avatarbanner" title="By Yaroslav Shuraev">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- educacion '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <section class="seccionEd">
+    <div class="container-fluid seccion-clara" id="educacion">
+      <div class="container-fluid ">
+        <div class="row">
+
+          <div class="m-0 col-sm-4 order-sm-first order-last educacionBanner">
+          </div>
+
+          <div class="m-0 col-sm-8 border seccionEducacion">
+            <!-- titulo seccion -->
+            <div>
+              <h2 class="seccion-titulo">Educación</h2>
+            </div>
+            <!-- modulo educacion -->
+            <div class="moduloEducacion">
+              <div class="logoseducacion">
+                <img src="assets/img/educacion/epetPNG.png" class="logoseducacion" alt="logo">
+              </div>
+              <div>
+                <h5>1999-2005. ESCUELA PROVINCIAL DE EDUCACIÓN TÉCNICA N°1. POSADAS, MISIONES, ARGENTINA.</h5>
+              </div>
+              <p class="seccion-texto">Técnica en construcciones (Polimodal, modalidad Producción de bienes y
+                servicios).</p>
+            </div>
+            <!-- modulo educacion -->
+            <div class="moduloEducacion">
+              <div class="logoseducacion">
+                <img src="assets/img/educacion/faudPNG.png" class="logoseducacion" alt="logo">
+              </div>
+              <div>
+                <h5>2006-2013. FACULTAD DE ARQUITECTURA, URBANISMO Y DISEÑO. UNIVERSIDAD NACIONAL DE CÓRDOBA. CÓRDOBA,
+                  ARGENTINA.</h5>
+              </div>
+              <p class="seccion-texto">Arquitecta.</p>
+            </div>
+            <!-- modulo educacion -->
+            <div class="moduloEducacion">
+              <div class="logoseducacion">
+                <img src="assets/img/educacion/poloticPNG.png" class="logoseducacion" alt="logo">
+              </div>
+              <div>
+                <h5> 2022. SILICON MISIONES-POLOTIC. BASE DE DATOS DESDE CERO. MODALIDAD ONLINE.</h5>
+              </div>
+              <p class="seccion-texto">Administradora de Bases de Datos Junior (DBA).</p>
+            </div>
+            <!-- modulo educacion -->
+            <div class="moduloEducacion">
+              <div class="logoseducacion">
+                <img src="assets/img/educacion/argentinaprogramaPNG.png" class="logoseducacion" alt="logo">
+              </div>
+              <div>
+                <h5>2022-2023. ARGENTINA PROGRAMA. #SEPROGRAMAR, PRIMERA ETAPA. #YOPROGRAMO, SEGUNDA ETAPA. MODALIDAD
+                  ONLINE.</h5>
+              </div>
+              <p class="seccion-texto">Programadora Web Fullstack Junior.</p>
+            </div>
+            <!-- modulo educacion -->
+            <div class="moduloEducacion">
+              <div class="logoseducacion">
+                <img src="assets/img/educacion/codo6.png" class="logoseducacion" alt="logo">
+              </div>
+              <div>
+                <h5>2023. Codo a Codo. FULL STACK PYTHON. Modalidad online. </h5>
+              </div>
+              <p class="seccion-texto">Full Stack Developer en Python.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- skills '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <section id="skills" class="container-fluid seccion-oscura">
+    <div class="container-fluid skillscontainer">
+      <div class="justify-content-start">
+        <!-- titulo seccion -->
+        <div class="row">
+          <h2 class="seccion-titulo-skills mt-5">
+            Skills
+          </h2>
+        </div>
+
+        <div class="">
+          <div class="row">
+            <!-- columna 1 Programación web ------------------------------->
+            <div class="col-md-6 p-4 mt-5">
+              <h4>Programación web</h4>
+              <br>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">html5</h6>
+                  <h6 class="text-end skills-porcentajes">80%</h6>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">css3 </h6>
+                  <span class="text-end skills-porcentajes">70%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="80"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">bootstrap </h6>
+                  <span class="text-end skills-porcentajes">75%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="80"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">javascript </h6>
+                  <span class="text-end skills-porcentajes">40%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">typescript </h6>
+                  <span class="text-end skills-porcentajes">40%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">angular </h6>
+                  <span class="text-end skills-porcentajes">70%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="60"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">mysql </h6>
+                  <span class="text-end skills-porcentajes">65%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">java </h6>
+                  <span class="text-end skills-porcentajes">30%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- columna 2  Diseño y Arquitectura---------------------------->
+            <div class="col-md-6 p-4 mt-5">
+              <h4>Diseño y Arquitectura</h4><br>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">figma </h6>
+                  <span class="text-end skills-porcentajes">50%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="60"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">coreldraw </h6>
+                  <span class="text-end skills-porcentajes">80%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">photoshop </h6>
+                  <span class="text-end skills-porcentajes">80%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">autocad</h6>
+                  <span class="text-end skills-porcentajes">90%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="95"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">sketchup </h6>
+                  <span class="text-end skills-porcentajes">95%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">vray </h6>
+                  <span class="text-end skills-porcentajes">70%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">revit </h6>
+                  <span class="text-end skills-porcentajes">50%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br>
+
+            <!-- columna 3  Idiomas--------------------------------------->
+            <div class="col-md-6 p-4 mt-5">
+              <h4>Idiomas</h4><br>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">Inglés </h6>
+                  <span class="text-end skills-porcentajes">80%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">Portugués </h6>
+                  <span class="text-end skills-porcentajes">60%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">Español </h6>
+                  <span class="text-end skills-porcentajes">100%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- columna 4  Habilidades Blandas-------------------------->
+            <div class="col-md-6 p-4 mt-5">
+              <h4>Habilidades Blandas</h4><br>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">TRABAJO EN EQUIPO </h6>
+                  <span class="text-end skills-porcentajes">80%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">RESOLUCIÓN DE PROBLEMAS </h6>
+                  <span class="text-end skills-porcentajes">95%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">FACILIDAD DE APRENDIZAJE </h6>
+                  <span class="text-end skills-porcentajes">90%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">GESTIÓN DEL TIEMPO </h6>
+                  <span class="text-end skills-porcentajes">85%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">ADAPTABILIDAD </h6>
+                  <span class="text-end skills-porcentajes">80%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill -->
+              <div class="moduloSkill">
+                <div class="d-flex justify-content-between skill-text">
+                  <h6 class="skill-title">ATENCIÓN AL DETALLE
+                  </h6>
+                  <span class="text-end skills-porcentajes">95%</span>
+                </div>
+                <div class="">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+
+  <!-- proyectos ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+  <section id="proyectos" class=" container-fluid proyectos-seccion d-flex flex-column seccion-clara">
+
+    <!-- Galeria de Proyectos ARQ ''''''''''''''''''''''''''''''''''''''''''-->
+    <div class="proyectos-contenedor seccion-clara">
+      <div class="container-fluid proyectostitulo justify-content-start">
+
+        <h2 class="seccion-titulo">Proyectos Arq</h2>
+        <p class="seccion-texto-proy">Algunos proyectos de arquitectura y diseño en los que he trabajado recientemente
+        </p>
+      </div>
+
+      <div class="row ms-3">
+        <!-- modulo proyectos arq -->
+        <div class="col-12 col-md-6 col-lg-4 mt-0 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2"> <!-- class="ms-2 me-2"-->
+              <img src="assets/img/proyectos/proyecto2.jpg" alt="ProyectoArq">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor">
+                <a target="_blank" class="" href="assets/img/proyectos/proyecto2.jpg" class="ps-3 pe-3">
+                  <i class="bi bi-card-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="pe-5">CASA KO. TEXAS, US</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2 ">
+                <p class=""></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modulo proyectos arq -->
+        <div class="col-12 col-md-6 col-lg-4 mt-0 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2"> <!-- class="ms-2 me-2"-->
+              <img src="assets/img/proyectos/proyecto5.jpg" alt="ProyectoArq">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor">
+                <a target="_blank" class="" href="assets/img/proyectos/proyecto5.jpg" class="ps-3 pe-3">
+                  <i class="bi bi-card-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">CASA U, REFORMA FACHADA. TEXAS, US</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2 ">
+                <p class=""></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modulo proyectos arq -->
+        <div class="col-12 col-md-6 col-lg-4 mt-0 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2"> <!-- class="ms-2 me-2"-->
+              <img src="assets/img/proyectos/proyecto3.jpg" alt="ProyectoArq">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor">
+                <a target="_blank" class="" href="assets/img/proyectos/proyecto3.jpg" class="ps-3 pe-3">
+                  <i class="bi bi-card-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">CASA T, DESDE CERO. MISIONES, ARG</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2 ">
+                <p class=""></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modulo proyectos arq -->
+        <div class="col-12 col-md-6 col-lg-4 mt-0 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2"> <!-- class="ms-2 me-2"-->
+              <img src="assets/img/proyectos/proyecto4.jpg" alt="ProyectoArq">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor">
+                <a target="_blank" class="" href="assets/img/proyectos/proyecto4.jpg" class="ps-3 pe-3">
+                  <i class="bi bi-card-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">DEPARTAMENTO FLIA AMPLIADA. MISIONES, ARG</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2">
+                <p class=""></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modulo proyectos arq -->
+        <div class="col-12 col-md-6 col-lg-4 mt-0 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2"> <!-- class="ms-2 me-2"-->
+              <img src="assets/img/proyectos/proyecto6.jpg" alt="ProyectoArq">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor">
+                <a target="_blank" class="" href="assets/img/proyectos/proyecto6.jpg" class="ps-3 pe-3">
+                  <i class="bi bi-card-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">CASA T, REFORMAS S/ EXISTENTE</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2">
+                <p class="">Sipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, ipsum eget.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modulo proyectos arq -->
+        <div class="col-12 col-md-6 col-lg-4 mt-0 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2"> <!-- class="ms-2 me-2"-->
+              <img src="assets/img/proyectos/proyecto1+.jpg" alt="ProyectoArq">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor">
+                <a target="_blank" class="" href="assets/img/proyectos/proyecto1+.jpg" class="ps-3 pe-3">
+                  <i class="bi bi-card-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">DISEÑO DE MI PORTFOLIO WEB</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2 ">
+                <p class="">"One page" dividida en secciones modulares contrastadas e imagenes referentes con efecto
+                  parallax que transicionan entre si.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galeria de Proyectos WEB ''''''''''''''''''''''''''''''''''''''''''-->
+    <div class="proyectos-contenedor seccion-oscura">
+      <div class="container-fluid proyectostitulo justify-content-start">
+        <h2 class="seccion-titulo">Proyectos Web</h2>
+        <p class="seccion-texto-proy">Comenzando esta etapa, algunos proyectos de desarrollo web</p>
+      </div>
+      <div class="row">
+
+        <!-- modulo proyectos web -->
+        <div class="col-12 col-md-6 col-lg-4 mt-4 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2">
+              <img src="assets/img/proyectos/wp1.jpg" alt="Proyecto Web">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor"> <!-- pb-4 -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="ps-3 pe-3"
+                  title="Repositorio">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://sf-portfoliofrontend-----/" target="_blank" rel="noopener noreferrer"
+                  class="ps-3 pe-3" title="Live">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">2024. MI PORTFOLIO WEB</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2">
+                <p class="">Para "Alura Latam". Portfolio web frontend responsivo con Html y Css puro, basado en una
+                  "one page" anteriormente diseñada para "Argentina Programa".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- modulo proyectos web -->
+        <div class="col-12 col-md-6 col-lg-4 mt-4 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2">
+              <img src="assets/img/proyectos/wp2.jpg" alt="Proyecto Web">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor"> <!-- pb-4 -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="ps-3 pe-3"
+                  title="Repositorio">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://sf-portfoliofrontend-------/" target="_blank" rel="noopener noreferrer"
+                  class="ps-3 pe-3" title="Live">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">2022-2023. Mi Portfolio Web</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2">
+                <p class="">Para "Argentina Programa". Desarrollo frontend (Html, Css, Bootstrap, Angular) y backend
+                  (Java) de un portfolio web
+                  responsivo con funciones agregar/editar/borrar al loguearse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- modulo proyectos web -->
+        <div class="col-12 col-md-6 col-lg-4 mt-4 mb-1">
+          <div class="proyecto">
+            <div class="ms-2 me-2">
+              <img src="assets/img/proyectos/wp5.jpg" alt="Proyecto Web">
+            </div>
+            <div class="overlay">
+              <div class="iconos-contenedor"> <!-- pb-4 -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="ps-3 pe-3"
+                  title="Repositorio">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://tp2-bonappetit.netlify.app/00index-home" target="_blank" rel="noopener noreferrer"
+                  class="ps-3 pe-3" title="Live">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ps-5 pe-5 pDescripcion">
+              <div class="ms-5 me-5 pt-2">
+                <h6 class="">2023. Página web para emprendimiento comercial</h6>
+              </div>
+              <div class="ms-5 me-5 pt-2">
+                <p class="">Para "Codo a codo". Desarrollo frontend (Html, Css) y backend (Python) de la página web de
+                  para un emprendimiento comercial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- banner salida '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <div>
+    <!--  title="By Mo Eid" -->
+    <div class="bannerFOOTER">
+    </div>
+  </div>
+
+
+
+  <!-- contacto y footer '''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <section id="contacto" class=" container-fluid seccion-oscura seccionContactame  m-0 pb-0 pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="text-end pe-3 pt-3">
+        </div> -->
+
+        <!-- texto izq------------------------------------- -->
+        <div class="col-sm-6  p-5 pt-4 footerF">
+          <h2 class="seccion-titulo ">Contactame</h2>
+          <div class="pt-4 pb-1 m-4">
+            <p class="">• Proyectos de Arquitectura. anteproyectos, modelado 3D SKP, renders, presentaciones, legajos
+              de obra, planos ejecutivos, presupuestos y seguimiento de obra.</p>
+            <p class="pt-2 pb-2">• Proyectos de Diseño Web. Concept Design, mockups, frontend y backend, sitios web
+              responsive, administracion de base de datos nivel jr.</p>
+          </div>
+          <div class="pt-4 cierre m-4">
+            <p>¿Necesitás un sitio web propio o para tu negocio o querés desarrollar de un proyecto de arquitectura en
+              concreto? Buscame en redes sociales o mandame un email directo.</p>
+            <p>Creemos un proyecto juntos...</p>
+          </div>
+          <!-- redes -->
+          <div class="ps-1 mt-4 mb-2 m-4">
+            <div class=" d-flex flex-row redes1">
+              <a class="pe-4 pt-3" href="https://www.linkedin.com/" target="_blank">
+                <i class="bi bi-linkedin"></i></a>
+              <a class="pe-4 pt-3" href="https://github.com/" target="_blank">
+                <i class="bi bi-github"></i></a>
+              <a class="pe-4 pt-3" href="mailto:sol@gmail.com/" target="_blank">
+                <i class="bi bi-envelope-fill"></i></a>
+              <a class="pe-4 pt-3" href="https://www.instagram.com/" target="_blank">
+                <i class="bi bi-instagram"></i></a>
+              <a class="pe-4 pt-3" href="https://dribbble.com/" target="_blank">
+                <i class="bi bi-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- form contacto--------------------------------- -->
+        <form class="col-sm-6  ml-auto mr-auto p-5 mt-2 m-4" target="_blank" id="form"
+          action="https://formspree.io/f/xayglqpn" method="POST">
+          <div class="pt-5"></div>
+
+          <div class="pt-5">
+            <input name="nombre" required type="text" id="name"
+              class="form-control-footer bg-transparent" placeholder="Tu nombre">
+          </div>
+          <!-- nombre + email no sale 'requerido' en html, ver -->
+          <div class="">
+            <input name="email" type="text" id="email" class="form-control-footer bg-transparent"
+              placeholder="Tu email" required pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" />
+          </div>
+
+          <div class="textarea-container">
+            <textarea name="mensaje" id="message" type="textarea" rows="6" cols="80" placeholder="Tu mensaje"
+              minlength="15" class="form-control-footer bg-transparent"></textarea>
+          </div>
+
+          <div class="send-button text-end mt-2">
+            <button class="btn-footer" type="submit" value="Enviar">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- btn volver arriba ''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
+  <div class="volverArriba">
+    <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+  </div>
+
+
+  <section class="seccion-oscura foot">
+    <div class="copyrights"> &#169; 2022-2023 Soledad Fretes</div>
+  </section>
+
+
+
+  <!-- para que al enviar el form no vaya a la pagina de formspree + alert https://www.youtube.com/watch?v=qtH8PLuy1Ck-->
+  <!-- <script src="./assets/js/formspree-alert.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+  .banner1 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+    /* ajustable a cualquier pantalla */
+    height: 100vh;
+    /* min-height: 51em; */
+    background-image: url(https://images.pexels.com/photos/16649758/pexels-photo-16649758.jpeg
+    );
+  }
+
+  p {
+    font-size: 1em;
+    /* color: var(--color-texto-header); */
+  }
+
+  b {
+    font-weight: 600;
+    /* color:var(--color-texto-medio); */
+  }
+
+
+/* correccion 10-5-23 */
+@media only screen and (max-device-width: 1000px) {
+  .banner1 {
+    background-size: 190%;
+  }
+}
+
+@media only screen and (max-device-width: 820px) {
+  .banner1 {
+    background-size: 210%;
+ }
+}
+
+@media only screen and (max-device-width: 575px) {
+  .banner1 {
+    background-size: 233%;  
+ }
+}

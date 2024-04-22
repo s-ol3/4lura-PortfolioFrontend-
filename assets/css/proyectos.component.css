@@ -1,0 +1,90 @@
+.proyectostitulo {
+    padding: 4em var(--padding-left) .5em var(--padding-left);
+    /* padding: 4em 3.5em .5em 3.5em; */
+    padding: 4em 5em .5em 5em;
+}
+
+.proyectos-seccion img {
+    height: 100%;
+    width: 100%;
+    /* padding: 1em ; */
+    border-radius: 0;
+    display: block;
+    transition: all 0.2s ease;
+    opacity: 70%;
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(50%);
+    /* border-left: 1px solid #ffc632; */
+    border-left: 1px solid #ffab61;
+    /* background-color: var(--color-background-oscuro1); */
+}
+
+.proyectos-contenedor {
+    padding-bottom: 6em;
+    padding-top: .5em !important;
+    width: 100%;
+    /* 4-5-23 */
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    /* icono al hover over imagen, cero cuando no */
+    opacity: 0;
+    position: absolute;
+    /* top: 50%; se iba para abajo c parrafos largos*/
+    margin-top: -7em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: .2;
+    /* achicarse when hover */
+    transform: scale(0.97);
+}
+
+.proyecto:hover .overlay {
+    opacity: .9;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+/* color icono ovelay */
+.overlay i {
+    color: #a19484;
+    font-size: 2.3em;
+    /* padding-bottom: 2em; */
+    transition: all 0.1s ease-in;
+}
+
+.overlay i:hover {
+    color: var(--color-links-navbar);
+}
+
+p.seccion-texto-proy {
+    font-size: 1.15em;
+    letter-spacing: 0px;
+}
+
+.pDescripcion {
+    margin: .5em 1.5em 2.5em 3.5em;
+}
+
+
+
+@media only screen and (max-device-width: 575px) {
+    .proyectostitulo {
+        /* padding: 4em var(--padding-left) .5em var(--padding-left); */
+        padding: 4em 3.5em .5em 3.5em;
+    }
+    .pDescripcion {
+        margin: .5em 1.5em 2.5em 2em;
+    }
+}

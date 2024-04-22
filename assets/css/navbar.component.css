@@ -1,0 +1,183 @@
+/* navbar */
+/*  navbar ///////////////////////////////////////////////////////////// */
+.nav {
+  width: 100%;
+  background-color: var(--color-background-navbar);
+  display: flex;
+  align-items: center;
+  padding: 0 0em 0 0.7em;
+  height: 8vh;
+  /* 10 */
+  position: relative;
+  z-index: 11 !important;
+  position: fixed;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-header {
+  flex: 0.95;
+  padding-left: 1rem;
+}
+
+.nav-list li {
+  list-style-type: none;
+  transition: .6s;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: .87em;
+  /* font-family: 'Unica One', cursive; */
+  font-weight: 500;
+  color: var(--color-texto-medio-navbar);
+  letter-spacing: 1.5px;
+  transition: .1s;
+}
+
+.nav-list li a:hover {
+  color: var(--color-links-navbar);
+  font-weight: 400;
+}
+
+#nav-check {
+  display: none;
+}
+
+.nav-btn {
+  display: none;
+}
+
+/* logo */
+nav img {
+  width: 4.2em;
+  float: left;
+  opacity: 60%;
+  padding: 1em;
+  margin-left: -0.5em;
+}
+
+nav img:hover {
+  opacity: 30%;
+}
+
+
+
+/* boton login logout */
+.nav-itemLog {
+  /* color: var(--color-links-navbar); */
+  color: #e2b57d;
+  /*  #d3a060; */
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+  font-size: 1.3em;
+  /* alineamiento respecto a los otros titulos de la nav */
+  padding-top: .22em;
+}
+
+.nav-itemLog:hover {
+  color: var(--color-texto-medio-navbar) !important;
+  font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+/* navbar responsive. sin aparecer logo en phone */
+/* @media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  } */
+
+
+
+
+
+
+
+/* tablet/ipad */
+@media screen and (max-width: 912px) {
+
+  /* navbar ////////////////////////////////////////////////////////*/
+  .nav {
+    padding: 1rem;
+    /* height: 9vh;  /*si queda ajustar mobile y mobile-small*/
+  }
+
+  .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    /* top: 0px; */
+    /* padding-top: 0.2rem; */
+    margin: 1.9em 1.2em 1.5em;
+    z-index: 900;
+    opacity: 30%;
+  }
+
+  .nav-btn label:hover {
+    cursor: pointer;
+  }
+
+  .nav-btn label {
+    /*
+      width: 50px;
+      padding: 13px; */
+    display: inline-block;
+    padding: .15em .7em .15em .7em;
+    font-size: 1.5em;
+  }
+
+  .nav-list li {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  /* ver apunte p   < ~   ¨2 slidescss_1a0d5¨ */
+  /* nav menu desplegado */
+  #nav-check:checked~.nav-list {
+    /* height: calc(100vh - 50px); */
+    height: 100vh;
+    padding-top: 2em;
+  }
+
+  .nav>.nav-list {
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    /* gap: 1rem; */
+    width: 100%;
+    background-color: var(--color-background-navbar);
+    z-index: 20;
+    height: 0;
+    transition: all 0.3s ease-in;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .nav-list li a {
+    padding: 2em;
+    font-size: 1.1em;
+  }
+
+  .nav-list li a:hover {
+    color: var(--colorLetras1);
+    font-weight: 500;
+    /* transform: scale(1.05); */
+  }
+
+  .nav-list li:hover {
+    transform: scale(1);
+  }
+}

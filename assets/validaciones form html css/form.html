@@ -1,0 +1,27 @@
+<!-- https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation 
+https://lenguajehtml.com/html/validaciones/validaciones-html5/-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validaciones verde rojo</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <form>
+        <label for="choose">¿Prefieres un plátano o una cereza?</label>
+        <input id="choose" name="i_like" minlength="5"  required/>
+        <button>Enviar</button>
+      </form>
+
+
+      <!--  no me funciona mas requerir el pattern @ etc.....
+    <input name="email" required type="text" id="email"
+           class="form-control-footer rounded-0 mb-3 bg-transparent" placeholder="Tu email"
+           pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" />
+         -->
+</body>
+</html>

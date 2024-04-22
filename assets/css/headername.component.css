@@ -1,0 +1,49 @@
+.headername {
+  background-color: var(--color-background-claro);
+  color: var(--color-texto-header);
+  height: 20em;  /* 15 + 22 para phone? */
+  padding: 8em;
+  padding-top: 11em;
+}
+
+
+/* para ipad mini achico padding para q entre ocupacion entera en vertical - 4-5-23*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)  {     
+  .headername {
+    padding: 11em 6.5em 8em 6.5em; 
+  }
+}
+
+
+h1 {
+   font-family: 'Federo', sans-serif;  
+}
+
+
+/* subrayado titulo, ANTES */
+/* h1:before {
+  width: 4.29em;
+  background-color: var(--color-links-navbar);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: .1em;
+} */
+
+/* subrayado titulo DESPUES */
+/* h1:after {
+  width: 4.29em;
+  background-color: var(--color-links-navbar);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 0em;
+  margin-bottom: .09em;
+} */
+
+.name {
+  color: #9a9a9a88;
+  font-family: 'Federo', sans-serif;
+  letter-spacing: 1px;
+}
+

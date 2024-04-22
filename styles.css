@@ -1,0 +1,578 @@
+@import url(./assets/css/bannerfooter.component.css);
+@import url(./assets/css/educacion.component.css);
+@import url(./assets/css/footer.component.css);
+@import url(./assets/css/halfbanner.component.css);
+@import url(./assets/css/headername.component.css);
+@import url(./assets/css/proyectos.component.css);
+@import url(./assets/css/redes.component.css);
+@import url(./assets/css/skills.component.css);
+@import url(./assets/css/sobremi.component.css);
+@import url(./assets/css/navbar.component.css);
+
+:root {
+  --color-background-navbar: #ffffffd1;
+  --color-background-oscuro1: #191919;
+
+  --color-background-claro: #ffffff;
+  /* one color */
+  --color-links-navbar: #efc591;
+  /* nombre apellido */
+  --color-texto-header: #a1a1a1;
+  /* titulo cada skills */
+  --color-texto-medio: #7d7d7d;
+  /* diploma educacion */
+  --color-texto-medio-educacion: #808080;
+
+  --color-texto-medio-navbar: #6f6f6f;
+  --color-texto-medio-navbar: #6f6f6fae;
+
+  --color-modulo-subseccion: #d0d0d0;
+
+  /* nombre y otros importantes */
+  --color-texto-grande: #9a9a9a;
+  /* skills % y bg barra */
+  --color-texto-medio-oscuro: #424242;
+  --padding-left: 5em;
+  --bs-gutter-x: 0rem;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Oswald", sans-serif;*/
+  /*font-family: 'Space Mono', monospace; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Rajdhani', sans-serif;
+  /* ok too*/
+  /* font-family: 'Nova Round', cursive; */
+  font-weight: 500;
+}
+
+body {
+  /* margin: 0; 
+      padding: 0; */
+  max-width: 100%;
+  overflow-x: hidden;
+  /* borde seccion oscura contra oscura */
+  background-color: #272727;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+/* subtitulos, ocupacion, nombre institucion educacion, etc */
+.h5,
+h5 {
+  font-size: 1rem;
+  color: var(--color-texto-grande);
+  /* font-weight: 550; */
+}
+
+/* subtitulo rubro skills */
+h4 {
+  color: var(--color-texto-medio-oscuro);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* letter-spacing: .2em; */
+    font-size: 1rem;
+}
+
+/* nombre encabezado */
+h1,
+.h1 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+.h4, h4 {
+  font-size: calc(1.275rem + .3vw);
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+p {
+  color: var(--color-texto-medio);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  /* letter-spacing: .1em; educacion */
+  letter-spacing: .02em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-oscura {
+  color: var(--color-texto-medio);
+  background-color: var(--color-background-oscuro1);
+}
+
+.seccion-clara {
+  color: var(--color-texto-medio);
+  background-color: var(--color-background-claro);
+}
+
+/* subrayado titulo, ANTES */
+/* .seccion-titulo:before {
+      width: 4rem;
+      background-color: var(--color-links-navbar);
+      content: "";
+      display: block;
+      height: 1px;
+      margin-bottom: .5em;
+    } */
+
+/* subrayado titulo DESPUES */
+.seccion-titulo:after {
+  width: 4rem;
+  background-color: var(--color-links-navbar);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: .5em;
+}
+
+.seccion-titulo {
+  font-size: 1.5rem;
+  padding: .9em 0 .5em 0;
+  color: var(--color-links-navbar);
+  /* --------fuente = header---------- */
+  font-family: 'Federo', sans-serif;
+}
+
+/* sobremi/exp/diploma textos */
+.seccion-texto {
+  font-size: 1.14rem;
+  letter-spacing: 1.66px;
+  line-height: 1.5em;
+}
+
+.seccionEd{
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* forms'''''''''''''''''''''''''''''''''''''''''''''''''-- */
+/* borde input */
+.form-control {
+  background-color: var(--bs-offcanvas-bg);
+  /* color borde input mail y password login etc */
+  border: 0.1em solid #77777736;
+  /* border: 0.1em solid #e1e1e1; */
+  color: var(--color-texto-header);
+}
+
+
+/* links largos traidos con findById en los modales salian fuera del margin o padding del modal-body, dejar de referencia */
+p {
+  overflow-wrap: break-word;
+  /* 4-5-23 agrego para ix */
+  word-wrap: break-word;
+  /* hyphens: auto; rompe mucho */
+}
+
+
+
+
+
+
+/* reutilizo clases de bootstrap '''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+.container-fluid {
+  /* width: 100%; */
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-sm-4 {
+  flex: 0 0 auto;
+  width: 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-sm-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-sm-8 {
+  flex: 0 0 auto;
+  width: 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.333333%;
+  max-width: 33.333333%;
+}
+
+
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+
+
+/* ''''''''''''''''''''''''''''''''''margin */
+/* header */
+.m-5 {
+  margin: 1.25rem;
+  /* 5 veces el valor de 0.25rem */
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-4 {
+  margin: 1.5rem;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.me-5 {
+  margin-right: 1.25rem;
+}
+
+.ms-5 {
+  margin-left: 1.25rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+
+/* '''''''''''''''''''''''''''''''''''padding */
+/* redes */
+.pe-4 {
+  padding-right: 1.5rem;
+  /* 4 veces el valor de 0.375rem */
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+  /* 3 veces el valor de 0.25rem */
+}
+
+.ps-5 {
+  padding-left: 1.25rem;
+}
+
+.pe-5 {
+  padding-right: 1.25rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 3.125rem;
+}
+
+.ps-3 {
+  padding-left: 0.75rem;
+}
+
+.pe-3 {
+  padding-right: 0.75rem;
+}
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+/* .pt-5 {
+  padding-top: 1.25rem;
+} */
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 3.125rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desplazamiento lateral */
+* {
+  margin: 0;
+  padding: 0;
+  --bs-gutter-x: 0rem;
+  box-sizing: border-box;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  .col-sm-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-sm-8 {
+    flex: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 1000%;
+  }
+
+  /* cambio de orden educacion, primero texto luego banner */
+  .order-sm-first {
+    order: -1;
+    /* Coloca el elemento al principio del flujo de flexbox */
+  }
+  .order-last {
+    order: 13;
+    /* Coloca el elemento al final del flujo de flexbox */
+  }
+}
+
+
+
+
+
+
+
+/* volver arriba btn fixed */
+
+.volverArriba {
+  font-size: 2em;
+  position: fixed;
+  right: 3%;
+  /* top: 80%; */
+  bottom: 5%;
+  /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 0%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
+  /* padding: 0.2em 0.3em 0.2em 0.3em; */
+  /* border-radius: .4em; */
+  z-index: 1500;
+}
+
+.volverArriba i:active {
+  color: var(--color-links-navbar);
+}
+
+.volverArriba i:hover {
+  color: var(--color-links-navbar);
+}
+
+.volverArriba i {
+  /* color: var(--color-links-navbar);   */
+  /* color: #0000005c; */
+  /* color: #4f4f4f29; */
+  color: #4f4f4f33;
+}
+
+ @media only screen and (max-device-width: 575px) {
+  /* .volverArriba {
+    display: none;
+  } */
+
+  .volverArriba {
+  position: fixed;
+  right: 7%;
+  bottom: 5%;
+}
+  
+} 
+
+
+
+
+
+/* cambio barra desplazamiento */
+
+/* en pagina normal, no barra c modal open, no para firefox */
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-background-oscuro1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-links-navbar);
+  border-radius: 0;
+  height: 6em;
+}
+
+/* para firefox, solo colorea, no ancho personalizado, solo 'thin' */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #efc591cb #191919;
+}

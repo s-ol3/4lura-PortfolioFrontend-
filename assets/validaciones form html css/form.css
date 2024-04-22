@@ -1,0 +1,14 @@
+/* https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation 
+https://lenguajehtml.com/html/validaciones/validaciones-html5/*/
+
+
+
+
+input:invalid {
+    border: 6px dashed red;
+  }
+  
+  input:valid {
+    border: 6px solid green;
+  }
+  
