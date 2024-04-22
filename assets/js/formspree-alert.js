@@ -1,4 +1,4 @@
-// para que al enviar el form no vaya a la pagina de formspree + alert 
+// para que no vaya a la pagina de formspree al enviar el form + alert 
 // https://www.youtube.com/watch?v=qtH8PLuy1Ck -->
 
 const $form = document.querySelector('#form')

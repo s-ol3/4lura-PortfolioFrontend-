@@ -959,20 +959,20 @@
           <div class="pt-4"></div>
 
           <div class="pt-5">
-            <input name="nombre" required type="text" id="name" class="form-control-footer bg-transparent"
-              placeholder="Tu nombre" minlength="3">
+            <input name="nombre" type="text" id="name" class="form-control-footer bg-transparent"
+              placeholder="Tu nombre" minlength="3" required>
           </div>
-          <!-- nombre + email no sale 'requerido' en html, ver -->
+
           <div class="">
             <input name="email" type="email" id="email" class="form-control-footer bg-transparent"
-              placeholder="Tu email" required pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" />
+              placeholder="Tu email" pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" / required>
             <!-- <input name="email" type="email" id="email" class="form-control-footer bg-transparent"
               placeholder="Tu email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" /> -->
           </div>
 
           <div class="textarea-container">
             <textarea name="mensaje" id="message" type="textarea" rows="6" cols="80" placeholder="Tu mensaje"
-              minlength="15" class="form-control-footer bg-transparent"></textarea>
+              minlength="15" class="form-control-footer bg-transparent" required></textarea>
           </div>
 
           <div class="send-button text-end mt-2">
@@ -1000,7 +1000,7 @@
 
 
 
-  <!-- para que al enviar el form no vaya a la pagina de formspree + alert https://www.youtube.com/watch?v=qtH8PLuy1Ck-->
+  <!-- para que no vaya a la pagina de formspree al enviar el form + alert -->
   <script src="./assets/js/formspree-alert.js"></script>
 </body>
 
