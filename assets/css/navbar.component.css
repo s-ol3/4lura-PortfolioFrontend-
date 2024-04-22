@@ -181,3 +181,21 @@ nav img:hover {
     transform: scale(1);
   }
 }
+
+
+@media screen and (max-width: 576px) {
+  .nav>.nav-list {
+    /* background-color: #2a2a2a;*/
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.4636244146095938) 35%);
+    background: linear-gradient(90deg, rgb(255 255 255 / 96%) 0%, rgb(255 255 255 / 85%) 75%); */
+    background: linear-gradient(90deg, rgb(255 255 255 / 93%) 0%, rgb(255 255 255 / 88%) 75%);
+  }
+
+  /* .nav-btn {
+    color: red;
+  }
+  .nav-btn label:hover {
+    cursor: pointer;
+    color: yellow;
+  } */
+}
