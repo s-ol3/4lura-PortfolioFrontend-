@@ -19,18 +19,18 @@
     /* background-color: var(--color-background-oscuro1); */
 }
 
-.web-proy {
-    /* height: 100%;
+/*.web-proy {
+     height: 100%;
     width: 100%;
     border-radius: 0;
     display: block;
     transition: all 0.2s ease;
     -webkit-filter: grayscale(10%);
     filter: grayscale(50%);
-    border-left: 1px solid #ffab61; */
+    border-left: 1px solid #ffab61; 
 
-    opacity: 40%;
-}
+     opacity: 45%; 
+}*/
 
 .proyectos-contenedor {
     padding-bottom: 6em;
