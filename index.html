@@ -636,7 +636,7 @@
     </div>
   </section>
 
-  
+
 
   <!-- proyectos ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
   '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -933,7 +933,7 @@
           </div>
           <div class="pt-4 cierre m-4">
             <p>¿Necesitás un sitio web propio o para tu negocio o querés desarrollar de un proyecto de arquitectura en
-              concreto? Buscame en redes sociales o mandame un email directo.</p>
+              concreto? Buscame en redes sociales o mandame un mensaje desde acá.</p>
             <p>Creemos un proyecto juntos...</p>
           </div>
           <!-- redes -->
@@ -959,13 +959,15 @@
           <div class="pt-4"></div>
 
           <div class="pt-5">
-            <input name="nombre" required type="text" id="name"
-              class="form-control-footer bg-transparent" placeholder="Tu nombre">
+            <input name="nombre" required type="text" id="name" class="form-control-footer bg-transparent"
+              placeholder="Tu nombre" minlength="3">
           </div>
           <!-- nombre + email no sale 'requerido' en html, ver -->
           <div class="">
-            <input name="email" type="text" id="email" class="form-control-footer bg-transparent"
+            <input name="email" type="email" id="email" class="form-control-footer bg-transparent"
               placeholder="Tu email" required pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" />
+            <!-- <input name="email" type="email" id="email" class="form-control-footer bg-transparent"
+              placeholder="Tu email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" /> -->
           </div>
 
           <div class="textarea-container">
@@ -993,13 +995,13 @@
 
 
   <section class="seccion-oscura foot">
-    <div class="copyrights"> &#169; 2022-2023 Soledad Fretes</div>
+    <div class="copyrights"> &#169; 2024 Soledad Fretes</div>
   </section>
 
 
 
   <!-- para que al enviar el form no vaya a la pagina de formspree + alert https://www.youtube.com/watch?v=qtH8PLuy1Ck-->
-  <!-- <script src="./assets/js/formspree-alert.js"></script> -->
+  <script src="./assets/js/formspree-alert.js"></script>
 </body>
 
 </html>

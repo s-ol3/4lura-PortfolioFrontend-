@@ -17,6 +17,7 @@ async function handleSubmit(event) {
     })
     if (response.ok) {
         this.reset()
-        alert('Consulta enviada ✓\n¡Te responderemos pronto!')
+        //alert('Consulta enviada ✓\n¡Te responderé pronto!')
+        alert('Gracias por tu mensaje, te responderé pronto 😊')
     }
 }
