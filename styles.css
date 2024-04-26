@@ -226,7 +226,7 @@ p {
 
 
 
-/* reutilizo clases de bootstrap '''''''''''''''''''''''''''''''''''''''
+/* reutilizo clases '''''''''''''''''''''''''''''''''''''''''''''''''''''''
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
 .container-fluid {
@@ -556,7 +556,7 @@ p {
 
 /* cambio barra desplazamiento */
 
-/* en pagina normal, no barra c modal open, no para firefox */
+/* en pagina normal, no para firefox. cambió visualizacion con nuevas actualizaciones de navegadores */
 body::-webkit-scrollbar {
   width: 0.2em;
 }
